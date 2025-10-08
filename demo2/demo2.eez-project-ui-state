@@ -163,7 +163,8 @@
                       "enableClose": false,
                       "icon": "svg:hierarchy"
                     }
-                  ]
+                  ],
+                  "active": true
                 },
                 {
                   "type": "tabset",
@@ -192,18 +193,6 @@
               "children": [
                 {
                   "type": "tab",
-                  "id": "#f6b2b6ed-3040-4cc0-b87d-0deefb912900",
-                  "name": "Settings",
-                  "component": "editor",
-                  "config": {
-                    "objectPath": "[demo2.eez-project]:/settings",
-                    "subObjectPath": "[demo2.eez-project]:/settings",
-                    "permanent": false
-                  },
-                  "icon": "material:settings"
-                },
-                {
-                  "type": "tab",
                   "id": "#ac825104-a8f2-4acf-b1a2-0b3f8c81d03c",
                   "name": "Screen2",
                   "component": "editor",
@@ -213,8 +202,7 @@
                   },
                   "icon": "svg:page"
                 }
-              ],
-              "active": true
+              ]
             },
             {
               "type": "row",
@@ -982,11 +970,11 @@
     "[demo2.eez-project]:/userPages/0[flow-state]": {
       "selection": {
         "0": {
-          "0": {},
+          "0": {
+            "$selected": true
+          },
           "1": {
-            "1": {
-              "$selected": true
-            }
+            "1": {}
           }
         }
       },
@@ -1007,14 +995,14 @@
     "[demo2.eez-project]:/userPages/1[flow-state]": {
       "selection": {
         "0": {
-          "0": {},
+          "0": {
+            "$selected": true
+          },
           "1": {
             "0": {
               "0": {}
             },
-            "1": {
-              "$selected": true
-            }
+            "1": {}
           }
         }
       },
@@ -1035,12 +1023,12 @@
     "[demo2.eez-project]:/userPages/2[flow-state]": {
       "selection": {
         "0": {
-          "0": {},
+          "0": {
+            "$selected": true
+          },
           "1": {
             "0": {},
-            "1": {
-              "$selected": true
-            }
+            "1": {}
           }
         }
       },
@@ -1070,11 +1058,10 @@
   "showComponentDescriptions": true,
   "logsPanelFilter": "all",
   "selectedStylePropertyName": "",
-  "lvglPart": "ITEMS",
+  "lvglPart": "MAIN",
   "lvglState": "DEFAULT",
   "lvglExpandedPropertiesGroup": [
-    "BORDER",
-    "BACKGROUND"
+    "BORDER"
   ],
   "showInactiveFlowsInDebugger": true,
   "globalFlowZoom": true,
